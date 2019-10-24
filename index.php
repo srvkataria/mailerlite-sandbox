@@ -155,6 +155,8 @@
 
                     <p align="center">These tests are implemented using PHP-Curl & can easily be run in the web browser. Example: 
                         <br/>
+                        Subscriber API Tests:
+                        <br/>
                         <a target="_blank" href="http://localhost/mailerlite-sandbox/tests/get-subscribers.php">http://localhost/mailerlite-sandbox/tests/get-subscribers.php</a>
                         <br/>
                         <a target="_blank" href="http://localhost/mailerlite-sandbox/tests/create-subscriber.php">http://localhost/mailerlite-sandbox/tests/create-subscriber.php</a>
@@ -162,6 +164,15 @@
                         <a target="_blank" href="http://localhost/mailerlite-sandbox/tests/edit-subscriber.php">http://localhost/mailerlite-sandbox/tests/edit-subscriber.php</a>
                         <br/>
                         <a target="_blank" href="http://localhost/mailerlite-sandbox/tests/delete-subscriber.php">http://localhost/mailerlite-sandbox/tests/delete-subscriber.php</a>
+                        <br/>
+                        Fields API Tests:
+                        <br/>
+                        <a target="_blank" href="http://localhost/mailerlite-sandbox/tests/get-fields.php">http://localhost/mailerlite-sandbox/tests/get-fields.php</a>
+                        <br/>
+                        <a target="_blank" href="http://localhost/mailerlite-sandbox/tests/create-field.php">http://localhost/mailerlite-sandbox/tests/create-field.php</a>
+                        <br/>
+                        <a target="_blank" href="http://localhost/mailerlite-sandbox/tests/delete-field.php">http://localhost/mailerlite-sandbox/tests/delete-field.php</a>
+                        <br/>
                     </p>
                 </div>
             </div>
