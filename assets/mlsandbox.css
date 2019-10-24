@@ -1,0 +1,252 @@
+#ml-page {
+	background-color: #f2f2f2;
+}
+
+.section-header {
+	/*background-color: #72845d;*/
+	background-color: #fff;
+	display: flex;
+	width: 100vw;
+	padding: 15px;
+	padding-left: 50px;
+	padding-right: 50px;
+	color: #000;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.header-title {
+	color: #000;
+	font-size: 15px;
+	font-weight: 500;
+	padding-left: 40px;
+}
+
+.code-text {
+	background-color: #f2f2f2;
+	padding: 7px;
+	border-radius: 7px;
+	color: #858585;
+}
+
+.header-logo {
+	width: 158px;
+    height: 40px;
+    margin-top: 0;
+    background-image: url(https://files.readme.io/g2qbDp1TSRSFCLGRuJr1_mailerlite-logo-new@2x.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: left;
+    margin: 0 15px 0 0;
+}
+
+.header-links ul {
+	display: inline-block; 
+	list-style-type: none;
+	margin: 0 auto;
+}
+
+.header-links ul li {
+	display: inline;
+	background-color: #bababa;
+	color: #fff;
+	font-size: 13px;
+	font-weight: 600;
+	text-align: center;
+	padding: 10px;
+	border-radius: 10px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.header-links ul li:hover {
+	background-color: #7c7c7c;
+	cursor: pointer;
+}
+
+.header-links ul .link.active {
+	background-color: #7c7c7c;
+	cursor: default;
+}
+
+.section {
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.section-content {
+	background-color: #fff;
+	width: 75vw;
+	border-radius: 20px;
+	padding: 20px;
+}
+
+#btn-add-subscriber {
+	float: right;
+	font-size: 13px;
+	color: #696969;
+	font-weight: 600;
+}
+
+#fields-table {
+	margin-top: 50px;
+}
+
+.title-1 {
+	font-size: 13px;
+	font-weight: 700;
+	padding-left: 0px;
+	color: #518989;	
+}
+
+.btn-action-main {
+	background-color: #696969;
+	font-size: 12px;
+	color: #fff;
+	font-weight: 700;
+}
+
+.btn-table {
+	background-color: #f2f2f2;
+	font-size: 12px;
+	color: #696969;
+	font-weight: 600;
+}
+
+
+.field-type-dropdown button {
+	font-size: 12px; 
+	background-color: #fff; 
+	border: 1px solid #c3c3c3; 
+	color: #696969; 
+	text-align: left;
+	width: 100%;
+}
+
+.dropdown-toggle::after {
+	position: absolute;
+	right: 5%;
+	top: 40%;
+}
+
+.dropdown-item {
+	font-weight: 600;
+	font-size: 14px;
+}
+
+.field-error-text {
+	font-size: 12px; color: #840808; padding-left: 20px; padding-top: 10px; font-weight: 600;
+}
+
+.field-success-text {
+	font-size: 12px; color: #636363; padding-left: 20px; padding-top: 10px; font-weight: 600;
+}
+
+.modal-content {
+	top: 20%;
+	width: 40vw; 
+	height: auto; 
+	margin: 0 auto;
+	padding: 10px;
+	padding-bottom: 50px;
+	max-height: calc(100vh - 210px);
+    overflow-y: auto;
+}
+
+.form-title {
+	padding-left: 30px;
+	padding-top: 10px;
+	color: #696969;
+	font-size: 15px;
+	font-weight: 700;
+}
+
+.form-row-fields {
+	padding-left: 30px;
+	font-size: 13px;
+	font-weight: 600;
+	color: #696969;
+}
+
+.form-row-fields .label-form {
+	padding-top: 10px;
+}
+
+.form-row-fields .form-field {
+	padding-top: 5px;
+}
+
+.form-row-fields input {
+	font-size: 12px;
+	width: 25vw;
+}
+
+.form-row-fields .year {
+	width: 5vw; display: inline;
+}
+
+.form-row-fields .month {
+	width: 4vw; display: inline;
+}
+
+.form-row-fields .day {
+	width: 4vw; display: inline;
+}
+
+#subscriber-table {
+	margin-top: 30px;
+}
+@media screen and (max-width: 750px) {
+	.section-header {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.header-logo {
+		margin: 0 auto;
+	}
+	.header-title {
+		text-align: center;
+		padding: 0px;
+		padding-top: 20px;
+		line-height: 2;
+	}
+	.header-links {
+		margin-top: 20px;
+	}
+	.header-links ul {
+		margin: 0 auto;
+		padding: 0px;
+	}
+	.header-links ul li {
+		margin: 3px;
+	}
+	.section-content {
+		width: 90vw;
+	}
+	.fields-section .field-inputs {
+		padding-top: 10px;
+		text-align: center;
+	}
+	.form-row-fields input {
+		font-size: 12px;
+		width: 50vw;
+	}
+
+	.form-row-fields .year {
+		width: 15vw; display: inline;
+	}
+
+	.form-row-fields .month {
+		width: 12vw; display: inline;
+	}
+
+	.form-row-fields .day {
+		width: 12vw; display: inline;
+	}
+}
