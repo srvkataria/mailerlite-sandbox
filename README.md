@@ -30,6 +30,9 @@ Run the server & open the web app in localhost
 
 The API usage, instructions & examples are documented here, [MailerLite SandBox API Docs](https://documenter.getpostman.com/view/9252054/SVzw51h9?version=latest#intro)
 
-Some example API tests for get, create, update & delete operations also exist in the tests folder inside root/home directory.
 
-These tests are implemented using PHP-Curl & can easily be run in the web browser.
+### API Tests
+
+Some example API tests for get, create, update & delete operations also exist in the `tests` folder inside root/home directory.
+
+These tests are implemented using `PHP-Curl` & can easily be run in the web browser.
