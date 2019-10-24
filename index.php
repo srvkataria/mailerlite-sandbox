@@ -1,6 +1,7 @@
-<?php 
-	//include("AppController.php"); 
-	//$controller = new AppController();	
+<?php declare(strict_types=1);
+
+    //include("AppController.php");
+    //$controller = new AppController();
 //include 'db_connection.php';
 //$conn = OpenCon();
 //echo "Connected Successfully";
