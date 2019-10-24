@@ -24,4 +24,12 @@ Update, `config.php` file located in the root directory, with your MySQL user cr
 
 Import `mailerlite.sql` (located in the root directory) in MySQL 
 
+Run the server & open the web app in localhost
+
+### API Endpoints
+
 The API usage, instructions & examples are documented here, [MailerLite SandBox API Docs](https://documenter.getpostman.com/view/9252054/SVzw51h9?version=latest#intro)
+
+Some example API tests for get, create, update & delete operations also exist in the tests folder inside root/home directory.
+
+These tests are implemented using PHP-Curl & can easily be run in the web browser.
