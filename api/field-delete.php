@@ -10,19 +10,19 @@ header('Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers
 require_once __DIR__.'./../Services/DB/SubscriberCRUD.php';
 require_once __DIR__.'./../Services/DB/FieldsCRUD.php';
 
-$subscriber = json_decode(file_get_contents('php://input'));
+$field = json_decode(file_get_contents('php://input'));
 
-if (empty($subscriber->subscriber_id) && empty($subscriber->email)) {
+if (empty($field->field_id) && empty($field->title)) {
     http_response_code(404);
     $result = new \stdClass();
 
     $result->status = 'input_error';
-    $result->message = 'Missing subscriber ID or email address of the subscriber';
+    $result->message = 'Missing field ID or title';
 } else {
-    if (!empty($subscriber->subscriber_id)) {
-        $result = deleteSubscriber($subscriber->subscriber_id);
-    } else if (!empty($subscriber->email)) {
-        $result = deleteSubscriberByMail($subscriber->email);
+    if (!empty($field->field_id)) {
+        $result = deleteField($field->field_id);
+    } else if (!empty($field->title)) {
+        $result = deleteFieldByTitle($field->title);
     }
 
     $result = json_decode($result);

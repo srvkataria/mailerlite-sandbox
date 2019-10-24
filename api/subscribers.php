@@ -12,7 +12,7 @@ $subscriber_list = json_decode($subscriber_list);
 if ('success' === $subscriber_list->status) {
     http_response_code(200);
 } elseif ('error' === $subscriber_list->status) {
-    http_response_code(404);
+    http_response_code(503);
 }
 
 echo json_encode($subscriber_list);

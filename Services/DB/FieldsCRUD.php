@@ -83,6 +83,7 @@ function createNewField($fields)
         $insertRow = $conn->query($finalQuery);
         if ($insertRow) {
             $status = 'success';
+            $result = "New field created";
         } else {
             $status = 'db_error';
             $result = $conn->error;
@@ -106,6 +107,28 @@ function deleteField($field_id)
     if ($query_results) {
         $status = 'success';
         $result = '';
+    } else {
+        $status = 'error';
+        $result = $conn->error;
+    }
+
+    $output = ['status' => $status, 'result' => $result];
+    closeConnection($conn);
+
+    return json_encode($output);
+}
+
+function deleteFieldByTitle($title)
+{
+    $conn = openConnection();
+    $status = '';
+    $result = '';
+    $finalQuery = 'DELETE FROM fields WHERE title = "'.$title.'"';
+
+    $query_results = $conn->query($finalQuery);
+    if ($query_results) {
+        $status = 'success';
+        $result = 'Field '.$title.' deleted';
     } else {
         $status = 'error';
         $result = $conn->error;

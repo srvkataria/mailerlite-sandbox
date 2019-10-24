@@ -81,7 +81,7 @@ $(document).ready(function() {
 					for (var field in all_fields) {
 						var field_id = all_fields[field]['field_id'];
 						var field_title = all_fields[field]['title'];
-						var field_type = all_fields[field]['type'];
+						var field_type = all_fields[field]['type'].toUpperCase();
 						var field_created_at = all_fields[field]['created_at'];
 
 						html_content = html_content+'<tr>';
@@ -217,7 +217,7 @@ $(document).ready(function() {
 							+"<div class='label-form'>"
 								+field_title
 							+"</div>";
-						if (field_type == "Date") {
+						if (field_type.toUpperCase() == "DATE") {
 							html_content = html_content	
 								+"<div class='form-field' style='display: inline-block;'>"	
 									+"<input type='text' class='form-control year' placeholder='YYYY'/>&nbsp;"
@@ -406,7 +406,7 @@ $(document).ready(function() {
 								s_field = key.split(':');
 								if (s_field[0] == field_title) {
 									field_value = s_field[1];
-									if (field_type == "Date") {
+									if (field_type.toUpperCase() == "DATE") {
 										var date_field = field_value.split('-');
 										year = date_field[0];
 										month = date_field[1];
@@ -420,7 +420,7 @@ $(document).ready(function() {
 							+"<div class='label-form'>"
 								+field_title
 							+"</div>";
-						if (field_type == "Date") {
+						if (field_type.toUpperCase() == "DATE") {
 							html_content = html_content	
 								+"<div class='form-field' style='display: inline-block;'>"	
 									+"<input type='text' class='form-control year' placeholder='YYYY' value='"+year+"'/>&nbsp;"
