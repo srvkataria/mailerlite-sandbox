@@ -171,7 +171,7 @@
         <div class="section-content">
             <div class="row">
                 <div class="col-md-12">
-                    <p align="center">Project structure, source-code & installation documentation is availavailable at, <a target="_blank" href="https://documenter.getpostman.com/view/9252054/SVzw51h9?version=latest#intro">MailerLite SandBox Github Page</a></p>
+                    <p align="center">Project structure, source-code & installation documentation is availavailable at, <a target="_blank" href="https://github.com/srvkataria/mailerlite-sandbox">MailerLite SandBox Github Page</a></p>
 
                     <p align="center">The API usage, instructions & examples are documented here, <a target="_blank" href="https://documenter.getpostman.com/view/9252054/SVzw51h9?version=latest#intro">MailerLite SandBox API Docs</a></p>
                     <p align="center"><a target="_blank" href="https://www.youtube.com/watch?v=xCi9ggfJntM&feature=youtu.be">MailerLite Sandbox Web Interface Demo Video Link</a></p>

@@ -2,7 +2,7 @@
 
 MailerLite Sandbox App to manage subscribers & fields using web interface & HTTP JSON endpoints.
 
-[App Demo (web interface) Link](https://www.youtube.com/watch?v=xCi9ggfJntM&feature=youtu.be)
+[App Demo Link (Web Interface)](https://www.youtube.com/watch?v=xCi9ggfJntM&feature=youtu.be)
 
 ## Installation
 
